@@ -4,6 +4,5 @@
 const { remote } = require('electron')
 
 document.querySelector('#launch').onclick = () => {
-  remote.process.env.HI_FROM_ELECTRON = 'Hello!';
   remote.shell.openExternal('https://google.com');
 }
